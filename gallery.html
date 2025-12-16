@@ -2,52 +2,282 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Deku Tree – Image Library</title>
+  <title>Deku Tree Image Library – Maps & Screenshots</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Full image library for the Deku Tree tutorial, including custom maps and in-game screenshots.">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <header class="border-b border-teal-400/40 bg-slate-900/80 backdrop-blur sticky top-0 z-20">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="pixel-border px-3 py-1 text-sm tracking-wide uppercase text-teal-300">Dungeon Lab</span>
+      </a>
+      <nav class="flex gap-4 text-sm md:text-base">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="route.html" class="nav-link">Step-By-Step Route</a>
+        <a href="gallery.html" class="nav-link nav-link-active">Map & Image Library</a>
+      </nav>
+    </div>
+  </header>
 
-<body>
+  <main class="container mx-auto px-4 py-8 space-y-8">
+    <header>
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Map & Image Library</h1>
+      <p>
+        Every image on this page is sourced from my own playthrough captures and custom map
+        layouts. You are welcome to use them for study or reference; please credit this site
+        if you reuse them in your own walkthroughs.
+      </p>
+    </header>
 
-<header>
-  <div class="container">
-    <h1>Deku Tree Deep Dive</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="route.html">Route</a>
-      <a class="nav-active" href="gallery.html">Gallery</a>
-    </nav>
-  </div>
-</header>
+    <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <!-- I’ll show the pattern once; all remaining <figure> blocks follow it -->
+      <figure class="image-card">
+        <img src="images/dekutree.png" alt="Exterior of the Great Deku Tree" class="img-rounded">
+        <figcaption>Outside the Great Deku Tree – dungeon entrance.</figcaption>
+      </figure>
 
-<div class="container">
-  <h2>Full Image Library</h2>
-  <p>Every screenshot and map used in this tutorial is collected here.</p>
+      <figure class="image-card">
+        <img src="images/insidethegreatdekutree.png" alt="First floor from the entrance" class="img-rounded">
+        <figcaption>Floor 1 entry room.</figcaption>
+      </figure>
 
-  <div class="grid-3">
+      <figure class="image-card">
+        <img src="images/first_chest.png" alt="First chest with the map" class="img-rounded">
+        <figcaption>First chest – dungeon map.</figcaption>
+      </figure>
 
-    <!-- example, you will add the entire list -->
-    <figure class="image-card">
-      <img src="images/dekutree.png" alt="Entrance of the Great Deku Tree">
-      <figcaption>Outside the Great Deku Tree</figcaption>
-    </figure>
+      <figure class="image-card">
+        <img src="images/gdtf1.png" alt="First floor custom map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Custom map – Floor 1.</figcaption>
+      </figure>
 
-    <figure class="image-card">
-      <img src="images/insidethegreatdekutree.png" alt="Inside first chamber">
-      <figcaption>First chamber</figcaption>
-    </figure>
+      <figure class="image-card">
+        <img src="images/gdtf2_mainroom.png" alt="Second floor main room map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Custom map – Floor 2 hub.</figcaption>
+      </figure>
 
-    <!-- Continue adding all images in order you listed -->
+      <figure class="image-card">
+        <img src="images/dekuscrub_f2r1.png" alt="Deku scrub on Floor 2" class="img-rounded">
+        <figcaption>Deku scrub encounter on Floor 2.</figcaption>
+      </figure>
 
-  </div>
-</div>
+      <figure class="image-card">
+        <img src="images/link_blocking.png" alt="Link blocking with his Deku Shield" class="img-rounded">
+        <figcaption>Blocking Deku nuts with the shield.</figcaption>
+      </figure>
 
-<footer>
-  © <span id="year"></span> Deku Tree Deep Dive
-</footer>
+      <figure class="image-card">
+        <img src="images/itgdt_f2r1.png" alt="Map showing first room on floor 2" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Floor 2 first room map.</figcaption>
+      </figure>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+      <figure class="image-card">
+        <img src="images/itgdt_f2r2.png" alt="Slingshot room platform" class="img-rounded">
+        <figcaption>Platform before the Fairy Slingshot chest.</figcaption>
+      </figure>
 
+      <figure class="image-card">
+        <img src="images/fairy_slingshot.png" alt="Fairy Slingshot item pickup" class="img-rounded">
+        <figcaption>Obtaining the Fairy Slingshot.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_f2r2_wayout.png" alt="Ladder shot down by slingshot" class="img-rounded">
+        <figcaption>Exit ladder from the slingshot room.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_f2r2_secret_vines.png" alt="Secret vines leading to a heart piece" class="img-rounded">
+        <figcaption>Hidden vines to a recovery heart.</figcaption>
+      </figure>
+
+      <!-- ...continue the same pattern for all remaining PNGs... -->
+
+      <figure class="image-card">
+        <img src="images/way_to_f3.png" alt="Vines and Skulltulas path to floor 3" class="img-rounded">
+        <figcaption>Climb to Floor 3 (Skulltula gauntlet).</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/skullspider.png" alt="Close-up of a Skulltula" class="img-rounded">
+        <figcaption>Standard Skulltula enemy.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_f3mr.png" alt="Third floor main room map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Floor 3 main room map.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_f3r1p1.png" alt="First third-floor room overview" class="img-rounded">
+        <figcaption>Floor 3 – first room overview.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_f3r1p2.png" alt="Link on the floor 3 pressure plate" class="img-rounded">
+        <figcaption>Pressure plate puzzle solved.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/gdt_compass.png" alt="Compass item pickup" class="img-rounded">
+        <figcaption>Compass obtained.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/gdt_f3r1_secret.png" alt="Secret Skulltula nook on floor 3" class="img-rounded">
+        <figcaption>Secret alcove above the main room.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/gold_skultula_f3r1.png" alt="Gold Skulltula on floor 3" class="img-rounded">
+        <figcaption>Gold Skulltula – Floor 3.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/gdt_torch.png" alt="Lit torch used for burning webs" class="img-rounded">
+        <figcaption>Standard torch model, used in multiple puzzles.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdtf3r1.png" alt="Floor 3 room 1 map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Room 1 map – Floor 3.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/1stfloorfrom3rd.png" alt="View down to first floor web from the top" class="img-rounded">
+        <figcaption>Looking down at the breakable web.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/gold_skulltula1_b1.png" alt="Gold Skulltula on the basement drainage pipe" class="img-rounded">
+        <figcaption>Gold Skulltula – basement drainage bars.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/b1_goldskulltula2.png" alt="Gold Skulltula on vines back to floor 1" class="img-rounded">
+        <figcaption>Gold Skulltula – vines back to Floor 1.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1mr_puzzel.png" alt="Basement torch puzzle" class="img-rounded">
+        <figcaption>Basement 1 torch puzzle.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1mr_puzzel2.png" alt="Door revealed after burning web" class="img-rounded">
+        <figcaption>Basement 1 door after burning web.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_dekupassword.png" alt="Deku scrub revealing 2-3-1 code" class="img-rounded">
+        <figcaption>“The order is… 2 3 1.”</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdtmr.png" alt="Basement main room map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Basement main room map.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r1.png" alt="Basement 1 room 1 map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Basement 1, room 1 map.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r1_puzzel.png" alt="Eye switch puzzle in basement 1" class="img-rounded">
+        <figcaption>Basement eye switch puzzle.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r2.png" alt="Basement 1 room 2 map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Basement 1, room 2 map.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r2_puzzel.png" alt="Basement 1 room 2 overview" class="img-rounded">
+        <figcaption>Basement 1, room 2 overview.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r2_puzzel2.png" alt="Water pressure plate in basement 1 room 2" class="img-rounded">
+        <figcaption>Underwater pressure plate.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r2_puzzel3.png" alt="Movable block and Skulltula puzzle" class="img-rounded">
+        <figcaption>Movable block & Skulltula.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r3.png" alt="Basement 1 room 3 map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Basement 1, room 3 map.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r3_puzzel.png" alt="Torch lighting puzzle in room 3" class="img-rounded">
+        <figcaption>Room 3 torch puzzle.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r4.png" alt="Basement 1 room 4 map" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Basement 1, room 4 map.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r4_enemies.png" alt="Egg sacs hanging from basement ceiling" class="img-rounded">
+        <figcaption>Gohma larva egg sacs on the ceiling.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1r4_puzzel.png" alt="Exit tunnel after burning the last web" class="img-rounded">
+        <figcaption>Exit tunnel carved open after the final web.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b1mr_view2.png" alt="Upper level of basement main room" class="img-rounded">
+        <figcaption>Upper level of the basement main chamber.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b2r1_puzzel.png" alt="Deku scrub trio chamber" class="img-rounded">
+        <figcaption>Deku Scrub trio chamber.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/itgdt_b2r1.png" alt="Basement 2 map with boss icon" class="img-rounded bg-slate-900/70 p-4">
+        <figcaption>Basement 2 map – boss floor.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/queengohma.png" alt="Queen Gohma on the ceiling" class="img-rounded">
+        <figcaption>Queen Gohma watching from above.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/queen_gohma2.png" alt="Close-up of Queen Gohma's eye during cutscene" class="img-rounded">
+        <figcaption>Cutscene close-up – Gohma’s eye.</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="images/rewards.png" alt="Heart container and warp portal after the fight" class="img-rounded">
+        <figcaption>Heart Container and warp after the fight.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-slate-800 bg-slate-900/80">
+    <div class="container mx-auto px-4 py-6 text-xs md:text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>&copy; <span id="year"></span> Deku Tree Deep Dive.</p>
+      <p class="text-slate-400">Gallery layout powered by CSS Grid + Tailwind.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
